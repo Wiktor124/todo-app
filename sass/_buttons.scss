@@ -1,0 +1,14 @@
+.button-mode {
+  width: 30px;
+  height: 30px;
+  border: none;
+
+  &__light {
+    background: url(../images/icon-moon.svg) no-repeat center;
+  }
+
+  &__dark {
+    background: url(../images/icon-sun.svg) no-repeat center;
+  }
+}
+

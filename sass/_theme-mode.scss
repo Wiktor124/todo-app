@@ -1,0 +1,30 @@
+.body {
+  position: relative;
+  &__light {
+    background-color: $light-mode;
+    ::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 300px;
+      background: url(../images/bg-desktop-light.jpg) no-repeat center;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+
+  &__dark {
+    background-color: $dark-mode;
+    ::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 300px;
+      background: url(../images/bg-desktop-dark.jpg) no-repeat center;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
+}

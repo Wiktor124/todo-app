@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.todo {
+  &__input {
+    width: 100%;
+    padding: 25px 0 25px 70px;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  &__input::placeholder {
+    font-size: 1.2rem;
+    color: $light-text;
+  }
+  
+}

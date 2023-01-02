@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+  <link rel="stylesheet" href="./public/css/style.css">
+  
+  <title>Todo app</title>
+</head>
+<body class="body body__light">
+  <div class="container ">
+    <header class="header">
+      <h1 class="header__title">TODO</h1>
+      <button id="button" class="button-mode button-mode__light"></button>
+    </header>
+
+    <form action="" id="todo__form" class="todo">
+      <div>
+        <label for="todo"></label>
+        <input type="text" name="todo" id="todo" class="todo__input" placeholder="Currently typing" required>
+      </div>
+    </form>
+
+    <ul class="delete todo__container" id="todo__container"></ul>
+  </div>
+</body>
+<script src="public/js/main.js"></script>
+</html>
