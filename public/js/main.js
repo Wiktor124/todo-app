@@ -1,3 +1,10 @@
+const express = require('express');
+const app = express();
+
+app.use(express.static('public'));
+
+
+
 // Storage todos
 const todo_list = JSON.parse(localStorage.getItem('todo')) || [];
 
