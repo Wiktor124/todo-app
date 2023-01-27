@@ -3,6 +3,7 @@ const todo_list = JSON.parse(localStorage.getItem('todo')) || []
 
 // Add a todo
 const add_todo = (todo) => {
+  // const todo_id = Math.floor(Math.random() * 10000);
   const todo_id = crypto.randomUUID()
 
   todo_list.push({ id: todo_id, todo: todo, state: false })
@@ -24,9 +25,9 @@ print_todo() //
 // Delete a todo
 const delete_todo = (delete_this) => {
   const index_todo = todo_list.findIndex(
-    (index) => index.id === parseInt(delete_this.value),
+    (index) => index.id === delete_this.value,
   )
-  // console.log(index_todo)
+  console.log(index_todo)
 
   todo_list.splice(index_todo, 1)
   localStorage.setItem('todo', JSON.stringify(todo_list))
@@ -35,6 +36,7 @@ const delete_todo = (delete_this) => {
 document.querySelector('.delete').addEventListener('click', (e) => {
   if (e.target.matches('#delete')) {
     delete_todo(e.target)
+    console.log(e.target);
   }
   return print_todo(todo_list)
 })
