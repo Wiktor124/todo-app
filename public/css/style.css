@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 ul, ol {
