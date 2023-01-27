@@ -16,6 +16,7 @@ ul, ol {
 
 .container {
   max-width: 650px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -98,13 +99,13 @@ a {
 
 .todo__input {
   width: 100%;
-  padding: 25px 0 25px 70px;
+  padding: 0.75em 0 0.75em 4.375em;
   border: none;
   border-radius: 8px;
   box-sizing: border-box;
+  font-size: 1.2rem;
 }
 .todo__input::placeholder {
-  font-size: 1.2rem;
   color: #48474c;
 }
 
