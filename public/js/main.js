@@ -36,7 +36,7 @@ const delete_todo = (delete_this) => {
 document.querySelector('.delete').addEventListener('click', (e) => {
   if (e.target.matches('#delete')) {
     delete_todo(e.target)
-    console.log(e.target);
+    console.log(e.target)
   }
   return print_todo(todo_list)
 })
@@ -66,7 +66,6 @@ button.addEventListener('click', () => {
     localStorage.setItem('mode', true)
   }
 })
-
 
 const mode = localStorage.getItem('mode')
 if (JSON.parse(mode)) {
