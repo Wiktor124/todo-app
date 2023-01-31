@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
   padding: 0 0 50px 0;
   margin: 0;
@@ -7,9 +8,11 @@ body {
   flex-direction: column;
   overflow: hidden;
   touch-action: pan-y;
+  font-family: "Roboto", sans-serif;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -46,11 +49,12 @@ a {
 .todo__container li {
   display: flex;
   justify-content: space-between;
-  padding: 10px 5px;
+  padding: 15px 25px;
   border-bottom: 1px solid #48474c;
 }
 .todo__container span {
   color: #48474c;
+  font-size: 1.5rem;
 }
 .todo__container::-webkit-scrollbar {
   display: none;
@@ -98,6 +102,14 @@ a {
   background: url(../images/icon-sun.svg) no-repeat center;
 }
 
+#delete {
+  border: none;
+  background: url(../images/trash.svg) no-repeat center;
+  background-size: 35px;
+  width: 35px;
+  height: 35px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -107,7 +119,7 @@ a {
 
 .todo__input {
   width: 100%;
-  padding: 0.75em 0 0.75em 4.375em;
+  padding: 15px 25px;
   border: none;
   border-radius: 8px;
   box-sizing: border-box;

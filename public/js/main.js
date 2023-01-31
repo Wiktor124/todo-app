@@ -18,7 +18,7 @@ const print_todo = () => {
   document.getElementById('todo__container').innerHTML = todo_list
     .map((item) => {
       return `
-      <li><span>${item.todo}</span><button id="delete" value="${item.id}">Delete</button></li>
+      <li><span>${item.todo}</span><button id="delete" value="${item.id}"></button></li>
       `
     })
     .join('')
