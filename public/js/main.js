@@ -1,9 +1,12 @@
 // Storage todos
 const todo_list = JSON.parse(localStorage.getItem('todo')) || []
+console.log(todo_list.length)
+
+const title = document.querySelector('.header__title')
+title.textContent = `TODO`
 
 // Add a todo
 const add_todo = (todo) => {
-  // const todo_id = Math.floor(Math.random() * 10000);
   const todo_id = crypto.randomUUID()
 
   todo_list.push({ id: todo_id, todo: todo, state: false })
@@ -27,7 +30,7 @@ const delete_todo = (delete_this) => {
   const index_todo = todo_list.findIndex(
     (index) => index.id === delete_this.value,
   )
-  console.log(index_todo)
+  // console.log(index_todo)
 
   todo_list.splice(index_todo, 1)
   localStorage.setItem('todo', JSON.stringify(todo_list))
@@ -36,7 +39,7 @@ const delete_todo = (delete_this) => {
 document.querySelector('.delete').addEventListener('click', (e) => {
   if (e.target.matches('#delete')) {
     delete_todo(e.target)
-    console.log(e.target)
+    // console.log(e.target)
   }
   return print_todo(todo_list)
 })
@@ -45,7 +48,6 @@ document.querySelector('.delete').addEventListener('click', (e) => {
 const form = document.getElementById('todo__form')
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-
   add_todo(document.getElementById('todo').value)
   print_todo()
   form.reset()
