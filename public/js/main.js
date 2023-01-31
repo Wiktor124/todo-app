@@ -2,8 +2,10 @@
 const todo_list = JSON.parse(localStorage.getItem('todo')) || []
 console.log(todo_list.length)
 
-const title = document.querySelector('.header__title')
-title.textContent = `TODO`
+const date = new Date();
+
+const title = document.querySelector('.header__date')
+title.textContent = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
 
 // Add a todo
 const add_todo = (todo) => {

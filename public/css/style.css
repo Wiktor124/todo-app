@@ -113,6 +113,16 @@ a {
 }
 
 .header {
+  text-align: right;
+}
+.header__date {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+}
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
