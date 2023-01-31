@@ -91,15 +91,17 @@ a {
 }
 
 .button-mode {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border: none;
 }
 .button-mode__light {
   background: url(../images/icon-moon.svg) no-repeat center;
+  background-size: contain;
 }
 .button-mode__dark {
   background: url(../images/icon-sun.svg) no-repeat center;
+  background-size: contain;
 }
 
 #delete {

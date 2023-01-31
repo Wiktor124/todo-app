@@ -1,14 +1,16 @@
 .button-mode {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   border: none;
 
   &__light {
     background: url(../images/icon-moon.svg) no-repeat center;
+    background-size: contain;
   }
 
   &__dark {
     background: url(../images/icon-sun.svg) no-repeat center;
+    background-size: contain;
   }
 }
 
