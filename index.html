@@ -14,24 +14,39 @@
 
 <body class="body body__light">
   <div class="container">
-    <header class="header">
-      <span class="header__date"></span>
-      <div class="header__content">
-        <h1 class="header__title">TODO</h1>
-        <button type="button" id="button" class="button-mode button-mode__light"></button>
-      </div>
-    </header>
+    <div id="add-appointment-container">
+      <header class="header">
+        <span class="header__date"></span>
+        <div class="header__content">
+          <h1 class="header__title">Citas</h1>
+          <button type="button" id="button" class="button-mode button-mode__light"></button>
+        </div>
+      </header>
+      <form id="todo__form" class="todo">
+        <div>
+          <div>
+            <label for="date-appointment">Fecha: </label>
+            <input type="date" name="date-appointment" id="date-appointment" lang="es">
+          </div>
 
-    <form action="" id="todo__form" class="todo">
-      <div>
-        <label for="todo"></label>
-        <input type="text" name="todo" id="todo" class="todo__input" placeholder="Currently typing" autocomplete="off" required>
-      </div>
-    </form>
+          <div>
+            <label for="time-appointment">Hora</label>
+            <input type="time" name="time-appointment" lang="es">
+          </div>
+
+        </div>
+
+        <div>
+          <label for="todo">Descripcion de cita</label>
+          <input type="text" name="appointment" id="todo" class="todo__input" placeholder="Agregar una cita"
+            autocomplete="off" required>
+        </div>
+      </form>
+    </div>
 
     <ul class="delete todo__container" id="todo__container"></ul>
   </div>
 </body>
-<script src="public/js/main.js"></script>
+<script type="module" src="public/js/main.js"></script>
 
 </html>
