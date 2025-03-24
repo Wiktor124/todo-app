@@ -97,7 +97,8 @@ form.todo > div:first-child input {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 45vh;
+  height: 45dvh;
+  min-height: 350px;
   background: url(../images/bg-desktop-light.jpg) no-repeat center;
   background-size: cover;
   z-index: -1;
@@ -110,7 +111,8 @@ form.todo > div:first-child input {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 45vh;
+  height: 45dvh;
+  min-height: 350px;
   background: url(../images/bg-desktop-dark.jpg) no-repeat center;
   background-size: cover;
   z-index: -1;
